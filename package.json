@@ -1,0 +1,26 @@
+{
+  "name": "chararesi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^9.2.1",
+    "electron-builder": "^22.8.0"
+  },
+  "build": {
+    "appId": "local.playground.chararesi",
+    "directories": {
+      "output": "./dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
